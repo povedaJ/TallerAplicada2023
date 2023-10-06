@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using TallerApi;
 using TallerApi.DataAccess.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,10 +11,27 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //builder.Services.AddDbContext<HotelParaisoContext>();
+
+builder.Services.AddSwaggerGen(
+    c =>
+    {
+        c.EnableAnnotations();
+        c.SwaggerDoc("v1",
+            new Microsoft.OpenApi.Models.OpenApiInfo
+            {
+                Title = "Taller aplicada Swagger",
+                Version = "V1",
+                Description = "Hotel Paraíso Endpoints"
+            });
+        c.OperationFilter<Documentation>();
+    }
+    );
+
 builder.Services.AddDbContext<HotelParaisoContext>(options =>
 options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
 
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -21,6 +39,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+//[SwaggerOperation(Summary = "Get all customers")]
+ 
 app.MapGet("/Customer", async (HotelParaisoContext context) =>
 {
     return Results.Ok(await context.Customers.ToListAsync());

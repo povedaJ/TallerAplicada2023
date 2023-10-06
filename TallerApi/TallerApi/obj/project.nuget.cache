@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mjjmrDJXtlXHse6mBvMCH31w1tO7AAyCKeq8djtu6HYxxeJ3xrQJ/c1i2+0rzD7pQn1xaXr/UBu6jqJqR0zeCw==",
+  "dgSpecHash": "uQQ4HiO8zE8nTEarOv3G2+0EA+60KFUFAbFTcY26T/vtLBAmk/6SfAX7/8tX3FEJ8kp0kbqgw9iM4sUhZi1n+g==",
   "success": true,
   "projectFilePath": "C:\\Users\\jvpov\\source\\repos\\TallerAplicada2023\\TallerApi\\TallerApi\\TallerApi.csproj",
   "expectedPackageFiles": [
@@ -44,6 +44,7 @@
     "C:\\Users\\jvpov\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\jvpov\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\jvpov\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\jvpov\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\6.5.0\\swashbuckle.aspnetcore.annotations.6.5.0.nupkg.sha512",
     "C:\\Users\\jvpov\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\jvpov\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "C:\\Users\\jvpov\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
