@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TallerApi",
+    "\\TallerApi\\TallerApi"
   ],
+  "SelectedNode": "\\TallerApi\\TallerApi\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
